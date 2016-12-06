@@ -36,8 +36,10 @@
 				tmpw.document.write(cdiv.innerHTML);
 				tmpw.document.write('</body></html>');
 				tmpw.document.close();
-				tmpw.print();
-				tmpw.close();
+				setTimeout(function() {
+				    tmpw.print();
+				    tmpw.close();
+				}, 100);
 			}
 		</script>
 	<?php
